@@ -33,3 +33,14 @@ client.user.setGame(`*help | *invite `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
+bot.on('ready', () => {
+    console.log(`[Start] ${new Date()}`);
+    console.log(`[INFO] ${bot.user.username}`)
+    console.log(`[INFO] ${bot.users.size}`)
+    console.log(`[INFO] ${bot.guilds.size}`)
+    console.log(`[BOT] Auto Role `)
+});
+
+bot.on('guildMemberAdd', (member) => {
+member.addRole(member.guild.roles.find('name', role));
+});
