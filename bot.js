@@ -921,3 +921,4 @@ if(!message.channel.guild) return;
 
 
 //ALPHACODE
+client.login(process.env.BOT_TOKEN)
