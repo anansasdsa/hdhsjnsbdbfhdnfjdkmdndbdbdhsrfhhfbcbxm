@@ -33,4 +33,4 @@ client.user.setGame(`capricon`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
-cliebt.login(process.env.BOT_Token);
+client.login(process.env.BOT_TOKEN);
