@@ -665,7 +665,7 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
      
 });
 client.on('message',async message => {
-  if(message.content.startsWith("*setvoice")) {
+  if(message.content.startsWith("#setvoice")) {
   if(!message.guild.member(message.author).hasPermissions('MANAGE_CHANNELS')) return message.reply('❌ **ليس لديك الصلاحيات الكافية**');
   if(!message.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS','MANAGE_ROLES_OR_PERMISSIONS'])) return message.reply('❌ **ليس معي الصلاحيات الكافية**');
   message.channel.send('✅| **تم عمل الروم بنجاح**');
@@ -787,10 +787,6 @@ client.on("guildMemberAdd", (member) => {
 /*id img*/
 
 //ALPHACODE
-const dateFormat = require('dateformat');
-var Canvas = require('canvas')
-var jimp = require('jimp')
-var moment = require("moment");
 //ALPHACODE
 
 client.on('message', message => {
